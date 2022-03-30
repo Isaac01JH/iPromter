@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="copia.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesión</title>
+
+    <link rel="stylesheet" href="Cssn/sing-in.css">
+</head>
+
+<body>
+
+    <div id="videoDiv">
+        <video id="video" autoplay muted loop>
+          <source src="imagenes/banda.mp4" type="video/webm">
+        </video>
+    </div>
+
+
+    <button class="retrocede" onclick="location.href='home.html'"><img src="imagenes/flecha.png"  alt=""></button>
+
+    <div class="cuadro">
+        <h1>Bienvenido!</h1>
+        <p>Debes iniciar sesión para continuar y acceder a nuestro sitio</p>
+
+
+        <form action="iniciar_sesion.php" method="post">
+            <label for="fname">Correo electronico</label>
+            <input type="text" name="Correo" placeholder="example@gmail.com" required="required" style="color: white;">
+            <label for="lname">Contraseña</label>
+            <input type="password" name="Contraseña" placeholder="password" required="required" style="color: white;">
+            <button type="submit">Entrar </button>
+        </form>
+
+    </div>
+</body>
+
+</html>

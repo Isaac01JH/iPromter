@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.flex-container {
+    display: flex;
+    padding: 10%;
+    background-color: black;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .flex-container {
+        padding: 0%;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .flex-container {
+        padding: 0%;
+        margin-top: 20%;
+    }
+}
+
+.titulo {
+    color: white;
+    position: absolute;
+    font-size: 4em;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .titulo {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 768px) {
+    .titulo {
+        font-size: 1.5em;
+    }
+}
+
+.titulo h1 {
+    text-align: center;
+}
+
+.informacion {
+    margin-top: 5%;
+    width: 100%;
+    height: 20vh;
+    background-color: #111111;
+}
+
+@media only screen and (max-width: 768px) {
+    .informacion {
+        width: 100%;
+        height: 230px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1365px) {
+    .informacion {
+        width: 100%;
+        height: 30vh;
+    }
+}
+
+.informacion ul>li {
+    font-size: 1vw;
+    margin-top: 2%;
+    margin-left: 4%;
+    color: white;
+    padding-top: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+    .informacion ul>li {
+        font-size: .8em;
+        margin-top: 2%;
+        margin-left: 4%;
+        color: white;
+        padding-top: 2%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1365px) {
+    .informacion ul>li {
+        font-size: 2vw;
+        margin-top: 2%;
+        margin-left: 4%;
+        color: white;
+        padding-top: 2%;
+    }
+}
+
+.form {
+    margin-top: 30%;
+    width: 70%;
+    height: 90vh;
+    background-color: transparent;
+    text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+        margin-top: 50vh;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1365px) {
+    .form {
+        width: 100%;
+        margin-top: 50vh;
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1919px) {
+    .form {
+        width: 100%;
+        margin-top: 50vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .item {
+        margin-top: 20px;
+    }
+}
+
+.item span {
+    padding: 2%;
+    font-size: 20px;
+    color: white;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1365px) {
+    .item span {
+        padding: 2%;
+        font-size: 15px;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1919px) {
+    .item span {
+        padding: 2%;
+        font-size: 20px;
+        color: white;
+    }
+}
+
+input {
+    margin-top: 20px;
+    height: 4vh;
+    width: 70%;
+    margin-left: 5%;
+    border: solid 1px #e1e8ef7e;
+    background: transparent;
+    font-size: 1.3em;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    input {
+        width: 90%;
+        margin-left: 2%;
+    }
+}
+
+textarea {
+    vertical-align: middle;
+    margin-top: 20px;
+    height: 15vh;
+    resize: none;
+    width: 70%;
+    margin-left: 5%;
+    border: solid 1px #e1e8ef7e;
+    background: transparent;
+    color: white;
+    font-size: 1.3em;
+}
+
+@media only screen and (max-width: 768px) {
+    textarea {
+        width: 94%;
+        height: 40vh;
+        margin-left: 2%;
+    }
+}
+
+.is-required:after {
+    content: '*';
+    margin-left: 3px;
+    color: red;
+    font-weight: bold;
+}
+
+.btn-container {
+    margin-top: 5%;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+.btn {
+    color: white;
+    width: 10vw;
+    height: 20vh;
+    border: solid 1px transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    .btn {
+        width: 50%;
+        height: 50%;
+        margin-left: 2%;
+    }
+}
+
+.btn:hover {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <title>iPromoter "Crea, conoce y triunfa "</title>
+    <link rel="shortcut icon"type="image/x-icon" href="copia.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+       <link href="product.css" rel="stylesheet">
+
+    </head>
+    <body style="background-color: #23232F;">
+      <!-- barra de navegación -->
+      <nav class="navbar navbar-expand-lg navbar-light background-color:#23232F; ">
+        <img src="imagenes/logo.png" style="height:30px;" >
+        <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+        <ul class="navbar-nav nav-fill w-75">
+            <a style="font-size:20px; color: white" class="nav-link" href="inicio.php">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+        <li class="nav-item">
+          <a  style=" font-size:20px; color: white" class="nav-link" href="buscar.php">Buscar artista</a>
+        </li>
+        <li class="nav-item">
+          <a   style=" font-size:25px; color: white"class="navbar-brand" href="index.php">iPromoter</a>
+        </li>
+          <li class="nav-item dropdown">
+            <a  style=" font-size:20px; color: white" class="nav-link dropdown-toggle" href="artistas.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categorias
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="musicos.php">Musicos</a>
+            </div>
+          </li>
+        </ul>
+        <div class="btn-group" style="text-align: right;"   >
+<button type="button" class="btn btn-primary" style=" margin-left:100%; font-size:20px; background-color:#23232F;  border-color:#23232F;"> 
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+  </svg>
+</button>
+<button type="button"   style="  background-color:#23232F; border-color:#23232F;" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+    <span class="sr-only">Toggle Dropdown</span>
+</button>
+  <div class="dropdown-menu" >
+  <a href="#" class="dropdown-item"><?php echo $_SESSION["nombre"] ?></a>
+      <a href="perfil_usu.php" class="dropdown-item">Editar perfil</a>
+      <a href="formArtista.php" class="dropdown-item">Se artista!</a>
+      <div class="dropdown-divider"></div>
+      <a href="cerrar_sesion.php" class="dropdown-item"> Cerrar sesion</a>
+  </div>
+</div>
+</div>
+    </nav>
+
+
+    
+      <div class="d-flex justify-content-center"style="height: 720px; background-color:#1D1D25;">
+    
+        <div class="d-flex justify-content-center"style=" margin-top:-200px; width: 400px; height: 600px; position:absolute; padding:200px 30px;"></div>
+          <h1 class="text-center" style="font-size: 40px; color: white;">Registrate</h1>
+          <form action ="registraArtista.php" method="post">
+            <div class="form-group">
+                <label style="color: white;" >Alias</label>
+                <input type="text"   style ="background: transparent; " class="form-control"  name="alias" placeholder="Ingresa tu Alias" required="required">		
+              </div>
+            <div class="form-group">
+              <label style="color: white;" >Nombre</label>
+              <input type="text"   style ="background: transparent; " class="form-control"  name="nombre" placeholder="Ingresa tu nombre" required="required">		
+            </div>
+            <div class="form-group"> 
+              <label  style="color: white;" >Apellido paterno</label>
+              <input type="text"  style ="background: transparent;"class="form-control"name="apellidop" placeholder="Ingresa tu apellido paterno" required="required">	
+            </div>   
+            <div class="form-group"> 
+              <label  style="color: white;" >Apellido materno</label>
+              <input type="text"  style ="background: transparent;"class="form-control"name="apellidom" placeholder="Ingresa tu apellido materno" required="required">	
+            </div>        
+            <div class="form-group">
+              <label style="color: white;">correo</label>
+              <input type="email"   style ="background: transparent; " class="form-control"  name="correo" placeholder="Ingresa tu correo" required="required">		
+            </div>
+            <div class="form-group"> 
+              <label style="color: white;">Contraseña</label>
+              <input type="password"  style = " color:white; background: transparent;"class="form-control"name="contraseña" placeholder="Ingresa tu contraseña" required="required">	
+            </div>       
+            <div class="form-group"> 
+              <label style="color: white;">Categoria</label>
+              <select class="form-control" name="categoria">
+                <option value="1">Musico</option>
+                </select>
+            </div>         
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-lg btn-block login-btn"  style="  border-color:white; background-color:#23232F;">Registrame</button>
+              
+            </div>
+          </form>
+          
+          
+  </div>
+   
+  
+  </div>
+  <div class="container">
+    <img src="imagenes/pump.png"  style=" position:absolute;top:63px;right:1px; height: 350px; "> 
+  </div>
+  <div class="container">
+    <img src="imagenes/jbalvin.png" style=" position:absolute;top:200px;left:-15px; height: 500px;"> 
+  </div>
+     
+  </div>
+ 
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
